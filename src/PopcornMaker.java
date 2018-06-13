@@ -13,7 +13,9 @@ String usertime = JOptionPane.showInputDialog("How many minutes do you want your
 Microwave jiff = new Microwave();
  jiff.putInMicrowave(yum);
  jiff.setTime(usertime);
-	
+ jiff.startMicrowave();
+ yum.applyHeat();
+ yum.eat();
 
 	
 	
