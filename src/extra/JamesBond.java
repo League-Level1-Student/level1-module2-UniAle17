@@ -4,16 +4,15 @@ import javax.swing.JOptionPane;
 
 public class JamesBond {
 
-	public void findCode(Vault v){
+	public void findCode(Vault v) {
 		for (int i = 0; i < 1000000; i++) {
-			
-		
-	v.tryCode(i);	
-		
-		}
-	
-	
-	}
-	
-}
 
+			v.tryCode(i);
+			if (v.tryCode(i)) {
+
+			}
+		}
+
+	}
+
+}
